@@ -1,4 +1,4 @@
-{% set version = '0.9.0' %}
+{% set version = "0.9.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/torch_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/torch/torch_{{ version }}.tar.gz
-  sha256: 2e68f9b4d2d4f37121ce2a9a0fc29372dbf1261150c467e1c100440dc1b7d4c7
+  sha256: 820d14011b98e22dc0203bd5db6d8e58684404688edbf65add621769346f0b0f
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -65,12 +65,10 @@ test:
 about:
   home: https://torch.mlverse.org/docs, https://github.com/mlverse/torch
   license: MIT
-  summary: Provides functionality to define and train neural networks similar to 'PyTorch' by
-    Paszke et al (2019) <arXiv:1912.01703> but written entirely in R using the 'libtorch'
-    library. Also supports low-level tensor operations and 'GPU' acceleration.
+  summary: Provides functionality to define and train neural networks similar to 'PyTorch' by Paszke et al (2019) <arXiv:1912.01703> but written entirely in R using the 'libtorch' library. Also supports low-level tensor operations and 'GPU' acceleration.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
