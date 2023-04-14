@@ -26,8 +26,13 @@ requirements:
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
-    - {{ posix }}make
     - {{ posix }}sed               # [win]
+    - {{ posix }}grep              # [win]
+    - {{ posix }}autoconf
+    - {{ posix }}automake          # [not win]
+    - {{ posix }}automake-wrapper  # [win]
+    - {{ posix }}pkg-config
+    - {{ posix }}make
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
@@ -37,9 +42,11 @@ requirements:
     - r-rcpp
     - r-bit64
     - r-callr
-    - r-cli
+    - r-cli >=3.0.0
     - r-coro >=1.0.2
+    - r-desc
     - r-ellipsis
+    - r-glue
     - r-magrittr
     - r-rlang
     - r-withr
@@ -50,9 +57,11 @@ requirements:
     - r-rcpp
     - r-bit64
     - r-callr
-    - r-cli
+    - r-cli >=3.0.0
     - r-coro >=1.0.2
+    - r-desc
     - r-ellipsis
+    - r-glue
     - r-magrittr
     - r-rlang
     - r-withr
