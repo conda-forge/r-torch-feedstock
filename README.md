@@ -1,11 +1,22 @@
+About r-torch-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-torch-feedstock/blob/main/LICENSE.txt)
+
 About r-torch
-=============
+-------------
 
 Home: https://torch.mlverse.org/docs, https://github.com/mlverse/torch
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-torch-feedstock/blob/main/LICENSE.txt)
+Summary: Provides functionality to define and train neural networks similar to 'PyTorch' by Paszke et al (2019) <arXiv:1912.01703> but written entirely in R using the 'libtorch' library. Also supports low-level tensor operations and 'GPU' acceleration.
+About r-torch
+-------------
+
+Home: https://torch.mlverse.org/docs, https://github.com/mlverse/torch
+
+Package license: MIT
 
 Summary: Provides functionality to define and train neural networks similar to 'PyTorch' by Paszke et al (2019) <arXiv:1912.01703> but written entirely in R using the 'libtorch' library. Also supports low-level tensor operations and 'GPU' acceleration.
 
