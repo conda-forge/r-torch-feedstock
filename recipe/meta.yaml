@@ -47,8 +47,10 @@ requirements:
     - r-desc
     - r-ellipsis
     - r-glue
+    - r-jsonlite
     - r-magrittr
     - r-rlang
+    - r-safetensors >=0.1.1
     - r-withr
   run:
     - r-base
@@ -62,8 +64,10 @@ requirements:
     - r-desc
     - r-ellipsis
     - r-glue
+    - r-jsonlite
     - r-magrittr
     - r-rlang
+    - r-safetensors >=0.1.1
     - r-withr
 
 test:
