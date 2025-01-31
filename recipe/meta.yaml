@@ -17,7 +17,9 @@ build:
     - lib/R/lib/
     - lib/
   missing_dso_whitelist:
-    - '*/R.dll'           # [win]
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -47,12 +49,12 @@ requirements:
     - r-cli >=3.0.0
     - r-coro >=1.0.2
     - r-desc
-    - r-ellipsis
     - r-glue
     - r-jsonlite
     - r-magrittr
-    - r-rlang
+    - r-rlang >=1.0.0
     - r-safetensors >=0.1.1
+    - r-scales
     - r-withr
   run:
     - r-base
@@ -63,12 +65,12 @@ requirements:
     - r-cli >=3.0.0
     - r-coro >=1.0.2
     - r-desc
-    - r-ellipsis
     - r-glue
     - r-jsonlite
     - r-magrittr
-    - r-rlang
+    - r-rlang >=1.0.0
     - r-safetensors >=0.1.1
+    - r-scales
     - r-withr
 
 test:
