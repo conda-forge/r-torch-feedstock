@@ -1,4 +1,4 @@
-{% set version = "0.16.0" %}
+{% set version = "0.17.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/torch_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/torch/torch_{{ version }}.tar.gz
-  sha256: de7deabf9ed515dd19353c089115ef2f28182433dc1aeb82ea9b496f7614b667
+  sha256: 8730c263892b80672b1c8bd5366471e02461cd69e472d0323b39fc9295008a94
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
